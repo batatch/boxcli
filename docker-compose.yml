@@ -1,0 +1,10 @@
+services:
+  boxcli:
+    image: boxcli:latest
+    build:
+      context: .
+    volumes:
+      - ./.box:/home/node/.box
+      - ./Documents:/home/node/Documents
+      - ./Downloads:/home/node/Downloads
+
